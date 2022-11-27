@@ -1,6 +1,26 @@
-#include "stdio.h"
+/* #include "stdio.h"
 
 int main() {
-    int product1_code, product2_code, number_of_product1, number_of_product2;
+    int code1, code2, unit1, unit2;
+    float price1, price2, total_expense;
+    scanf("%d %d %f", &code1, &unit1, &price1);
+    scanf("%d %d %f", &code2, &unit2, &price2);
+    total_expense = (unit1*price1) + (unit2*price2);
+    printf("VALOR A PAGER: R$ %.2f\n", total_expense);
+
+    return 0;
+} */
+
+
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    double c, res;
+    scanf("%d %d %lf", &a, &b, &c);
+    res = b * c;
+    scanf("%d %d %lf", &a, &b, &c);
+    res += b * c;
+    printf("VALOR A PAGAR: R$ %.2lf\n", res);
     return 0;
 }
